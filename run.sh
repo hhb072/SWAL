@@ -1,1 +1,1 @@
-CUDA_VISIBLE_DEVICES=6 python main.py --ngf=16 --ndf=64  --output_height=320  --trainroot='/home/huaibo.huang/data/rain/ddn/ddn_train' --trainfiles='data/ddn_train.list' --save_iter=1 --batchSize=8 --nrow=8 --lr_d=1e-4 --lr_g=1e-4  --cuda  --nEpochs=500
+CUDA_VISIBLE_DEVICES=6 python main.py --ngf=16 --ndf=64  --output_height=320  --trainroot='YOURPATH' --trainfiles='data/ddn_train.list' --save_iter=1 --batchSize=8 --nrow=8 --lr_d=1e-4 --lr_g=1e-4  --cuda  --nEpochs=500
