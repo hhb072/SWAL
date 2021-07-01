@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python test.py --ngf=16  --outf='test' --testroot='data/rain12_test' --testfiles='data/rain12_test.list' --pretrained='model/rain100l_best.pth'  --cuda
