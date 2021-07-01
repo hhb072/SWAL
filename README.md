@@ -12,7 +12,7 @@ We provide the models trained on DDN, DID, Rain100H, Rain100L, and AGAN datasets
 * [Google Driver](https://drive.google.com/drive/folders/1rOuxUmOEHf_6t7-ZhNfrvbwRj-Se_oFA?usp=sharing) 
 * [Jianguo Yun](https://www.jianguoyun.com/p/DbB0gXUQiaCuBxi37v0D)
 
-Download them into the model folder before testing. 
+Download them into the *model* folder before testing. 
 
 ## Dataset
 
