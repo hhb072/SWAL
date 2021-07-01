@@ -130,7 +130,7 @@ def main():
     #--------------build models -------------------------
     model = WaveletModel(ngf=opt.ngf, ndf=opt.ndf).cuda()    
     if opt.pretrained:
-        opt.start_epoch, opt.cur_iter = load_model(model, opt.pretrained)
+        load_model(model, opt.pretrained)
     print(model)    
     
     try:
@@ -182,8 +182,7 @@ def main():
            
 def load_model(model, pretrained, strict=False):
     state = torch.load(pretrained)
-    model.G.load_state_dict(state['G'], strict=strict)    
-    return state['epoch'], state['iter']
-
+    model.G.load_state_dict(state, strict=strict)    
+   
 if __name__ == "__main__":
     main()    
