@@ -23,9 +23,19 @@ You can also modify the data_loader code in your manner.
 
 ## Run
 
-Use run.sh to train SWAL and test.sh for evalation.
+Train SWAL on a single GPU:
 
-Adjust *--trainroot*, *--testroot*, *--trainfiles*, and *--testfiles* according to your own settings. 
+	 CUDA_VISIBLE_DEVICES=0 python main.py --ngf=16 --ndf=64  --output_height=320  --trainroot=YOURPATH --trainfiles='YOUR_FILELIST'  --save_iter=1 --batchSize=8 --nrow=8 --lr_d=1e-4 --lr_g=1e-4  --cuda  --nEpochs=500
+	 
+Train SWAL on multiple GPUs:
+
+	 CUDA_VISIBLE_DEVICES=0,1,2,3 python main.py --ngf=16 --ndf=64  --output_height=320  --trainroot=YOURPATH --trainfiles='YOUR_FILELIST'  --save_iter=1 --batchSize=32 --nrow=8 --lr_d=1e-4 --lr_g=1e-4  --cuda  --nEpochs=500	 
+
+Test SWAL:
+
+	 CUDA_VISIBLE_DEVICES=0 python test.py --ngf=16  --outf='test' --testroot='data/rain12_test' --testfiles='data/rain12_test.list' --pretrained='model/rain100l_best.pth'  --cuda
+
+Adjust the parameters according to your own settings. 
 
 ## Citation
 
