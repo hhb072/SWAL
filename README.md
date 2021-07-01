@@ -17,7 +17,7 @@ Download them into the *model* folder before testing.
 ## Dataset
 
 1. Download the rain datasets.
-2. Arrange the images and generate a list file, just like in the *test* folder.
+2. Arrange the images and generate a list file, just like the rain12 set in the *data* folder.
 
 You can also modify the data_loader code in your manner.
 
