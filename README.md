@@ -23,9 +23,9 @@ You can also modify the data_loader code in your manner.
 
 ## Run
 
-Use run.sh and test.sh to train and test SWAL, respectively. 
+Use run.sh to train SWAL and test.sh for evalation.
 
-Please change *trainroot*, *testroot*, *trainfiles*, and *testfiles* according to your settings. 
+Adjust *--trainroot*, *--testroot*, *--trainfiles*, and *--testfiles* according to your own settings. 
 
 ## Citation
 
