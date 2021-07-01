@@ -7,14 +7,25 @@ A pytorch implementation of Paper ["Selective Wavelet Attention Learning for Sin
 
 ## Models
 
-	 [GoogleDriver](https://drive.google.com/drive/folders/1rOuxUmOEHf_6t7-ZhNfrvbwRj-Se_oFA?usp=sharing) 
-	 [JianguoYun](https://www.jianguoyun.com/p/DbB0gXUQiaCuBxi37v0D)
+We provide the models trained on DDN, DID, Rain100H, Rain100L, and AGAN datasets in the following links:
 
+* [Google Driver](https://drive.google.com/drive/folders/1rOuxUmOEHf_6t7-ZhNfrvbwRj-Se_oFA?usp=sharing) 
+* [Jianguo Yun](https://www.jianguoyun.com/p/DbB0gXUQiaCuBxi37v0D)
 
+Download them into the model folder before testing. 
 
+## Dataset
 
-## Results
+1. Download the rain datasets.
+2. Arrange the images and generate a list file, just like in the *test* folder.
 
+You can also modify the data_loader code in your manner.
+
+## Run
+
+Use run.sh and test.sh to train and test SWAL, respectively. 
+
+Please change *trainroot*, *testroot*, *trainfiles*, and *testfiles* according to your settings. 
 
 ## Citation
 
