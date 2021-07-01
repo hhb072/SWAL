@@ -1,5 +1,5 @@
 # SWAL
-A pytorch implementation of Paper ["Selective Wavelet Attention Learning for Single Image Deraining"](https://link.springer.com/article/10.1007/s11263-020-01421-z)
+"Selective Wavelet Attention Learning for Single Image Deraining"(https://link.springer.com/article/10.1007/s11263-020-01421-z)
 
 ## Prerequisites
 * Python 3
