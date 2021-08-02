@@ -254,14 +254,14 @@ def main():
         
         if epoch % opt.save_iter == 0:
             save_epoch = (epoch//opt.save_iter)*opt.save_iter   
-            save_checkpoint(model, [best_mse, best_psnr], save_epoch, opt.cur_iter, '', opt.manualSeed)
+            save_checkpoint(model, save_epoch, opt.cur_iter, '', opt.manualSeed)
                   
 def load_model(model, pretrained, strict=False):
     state = torch.load(pretrained)
     model.G.load_state_dict(state['G'], strict=strict)   
     return state['epoch'], state['iter']
             
-def save_checkpoint(model, best, epoch, iteration, prefix="", manualSeed=0):
+def save_checkpoint(model, epoch, iteration, prefix="", manualSeed=0):
     model_out_path = "model/" + prefix +"model_epoch_{}_iter_{}_seed_{}.pth".format(epoch, iteration, manualSeed)
     state = {"epoch": epoch, "iter": iteration, "G": model.G.state_dict(), "D": model.D.state_dict()}
     if not os.path.exists("model/"):
